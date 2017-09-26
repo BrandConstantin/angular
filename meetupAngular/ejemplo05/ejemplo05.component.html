@@ -1,0 +1,10 @@
+<h1>Ejemplo 5</h1>
+
+<h2>Eventos (el evento click).</h2>
+
+<input #entrada (keyup)="actualizar(entrada.value)" [value]="palabra" type="text">
+<!--<button (click)="actualizar()">Genera valor</button>-->
+<button (click)='resetea()'>Resetea</button>
+
+<h1>{{ palabra | uppercase }}</h1>
+<p>--------------------------------</p>
