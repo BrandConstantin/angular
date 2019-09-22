@@ -1,0 +1,11 @@
+1. instalar nodejs
+2. descargar e instalar MongoDB
+3. descargar cygwin
+4. instalar npm >> npm init
+5. instalamos dependencias >> npm install dependencia --save 
+6. crear la BBDD
+7. creamos el ficheros index.js
+8. importamos mongoose y nos conectamos a la BBDD
+9. crear los modelos
+10. crear los controladores
+11. 
