@@ -8,4 +8,5 @@ var api = express.Router();
 
 //crear ruta
 api.get('/probando-controlador', UserController.pruebas);
+api.post('/registro', UserController.saveUser);
 module.exports = api;
