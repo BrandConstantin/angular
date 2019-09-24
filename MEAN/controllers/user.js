@@ -59,7 +59,39 @@ function saveUser(req, res) {
     }
 }
 
+function loginUser(req, res) {
+    var params = req.body;
+
+    var email = params.email;
+    var password = params.password;
+
+    User.findOne({ email: email.toLowerCase() }, (err, user) => {
+        if (err) {
+            res.status(500).send({ message: 'Error en la petición' });
+        } else {
+            if (!user) {
+                res.status(404).send({ message: 'El usuario no existe' });
+            } else {
+                //comprobar contraseña
+                bcrypt.compare(password, user.password, function(err, chech) {
+                    if (chech) {
+                        //devolver los datos del usuario logueado
+                        if (params.gethash) {
+                            //devolver un token de jwt                            
+                        } else {
+                            res.status(200).send({ user });
+                        }
+                    } else {
+                        res.status(404).send({ message: 'El usuario no ha podido loguearse' });
+                    }
+                });
+            }
+        }
+    });
+}
+
 module.exports = {
     pruebas,
-    saveUser
+    saveUser,
+    loginUser
 };
