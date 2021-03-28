@@ -1,0 +1,13 @@
+<button
+    class="btn btn-success"
+    (click)="showPass()">
+    Display Details
+</button>
+
+<p *ngIf="showPassword; else noShow"
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{elemntFifth: changeColor === 'black'}">
+{{showPassword}}</p>
+<ng-template #noShow>
+    <p></p>
+</ng-template>
