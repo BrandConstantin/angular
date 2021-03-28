@@ -17,7 +17,8 @@
 </button>
 <!-- it is the same with string interpolation-->
 <!-- <p [innerText]="allowNewServer"></p> -->
-<p>{{serverCreationStatus}}</p>
+<!-- <p>{{serverCreationStatus}}</p> -->
+<p *ngIf="serverCreated">Server was created, the name of the new server is {{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
 <p>Two server compnent into servers component</p>
