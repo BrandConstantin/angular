@@ -28,4 +28,5 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('cursoAngular9 app is running!');
   });
+
 });

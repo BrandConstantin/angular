@@ -341,10 +341,21 @@
   </div>
   <app-servers></app-servers>
 
-  <div class="row">
-    <div class="cl-xs-12">
-      <app-warning-alert></app-warning-alert>
-      <app-success-alert></app-success-alert>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <app-warning-alert></app-warning-alert>
+        <app-success-alert></app-success-alert>
+      </div>
+      <div class="col-6">
+        <label for="Username">Username</label>
+        <input type="text" class="form-control" [(ngModel)]="username">
+        <p>{{username}}</p>
+        <button 
+          class="btn btn-primary" 
+          [disabled]="username === '' "
+          (click)="username = '' ">Reset User</button>
+      </div>
     </div>
   </div>
   
