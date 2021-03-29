@@ -13,10 +13,12 @@ export class Exercise3Component implements OnInit {
   datetime = this.currentdate.getDate() + "/"+ (this.currentdate.getMonth()+1)  + "/" 
                 + this.currentdate.getFullYear() + " @ " + this.currentdate.getHours() + ":"  
                 + this.currentdate.getMinutes() + ":" + this.currentdate.getSeconds();
-  elementFifth = false;
+  textColor = 'black';
+  backgroundColor = 'white';
+  infoArray = [];
+  allInfo = '';
 
   constructor(){
-    this.elementFifth === false ? 'black': 'white';
   }
 
   changeColor(){
@@ -35,15 +37,18 @@ export class Exercise3Component implements OnInit {
       this.showPassword = '';
     }else{
       // console.log("click odd number");
-      this.showPassword = "The secret pass is TvN4 | Clicked " + this.countClicks + " | Time: " + this.datetime;    
+      this.allInfo = this.showPassword = "The secret pass is TvN4 | Clicked " + this.countClicks + " | Time: " + this.datetime;    
     }
     
     if(this.countClicks === 5){
-      this.elementFifth = true;
+      this.backgroundColor = 'blue';
+      this.textColor = 'white';
+
+      this.infoArray.push(this.allInfo);  
     }
   }
 
   getColor(){
-    return this.elementFifth === true ? 'blue' : 'white';
+    return this.backgroundColor === 'blue' ? 'blue' : 'white';
   }
 }

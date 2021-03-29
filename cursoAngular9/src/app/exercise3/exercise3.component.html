@@ -6,8 +6,9 @@
 
 <p *ngIf="showPassword; else noShow"
     [ngStyle]="{backgroundColor: getColor()}"
-    [ngClass]="{elemntFifth: changeColor === 'black'}">
+    [ngClass]="{white: textColor === 'white'}">
 {{showPassword}}</p>
 <ng-template #noShow>
     <p></p>
 </ng-template>
+<p>{{infoArray}}</p>
