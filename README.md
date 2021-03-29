@@ -14,4 +14,6 @@ Syllabus for initiation:
 
 Syllabus for project:
 * create components project
-* 
+* create navbar for header
+* create models
+* list recipies
