@@ -12,9 +12,13 @@
       </app-server-element>
     </div> -->
     <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="changeFirstElement()">Change first element</button>
+      <button class="btn btn-danger" (click)="destroyFirstElement()">Change first element</button>
+
       <app-server-element 
         *ngFor="let serverElement of serverElements"
-        [srvElement]="serverElement">
+        [srvElement]="serverElement"
+        [name]="serverElement.name">
 
       <p>
         <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
