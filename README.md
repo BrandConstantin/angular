@@ -17,3 +17,15 @@ Syllabus for project:
 * create navbar for header
 * create models
 * list recipies
+
+
+Deep databinging:
+* binding custom property
+* binding custom events
+* encapsulation
+* local reference in template
+* viewChield
+* ng-content
+* lifecycle
+* access ng-content with contentChild
+
