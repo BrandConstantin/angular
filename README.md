@@ -28,4 +28,13 @@ Deep databinging:
 * ng-content
 * lifecycle
 * access ng-content with contentChild
+* add navigation with event binding
+* passing data with property binding
+* passing data with properties and event binding
+* basic attribute directive
+* render directive
+* HostListener to listen host events
+* HostBinding to bind host properties
+* binding to directive properties
+* structural directives
 
