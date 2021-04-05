@@ -1,6 +1,6 @@
 # angular 9
 
-##Syllabus for initiation: 
+## Syllabus for initiation: 
 * bootstrap install
 * create components
 * string interpolation
@@ -12,7 +12,7 @@
 * ngClass
 * ngFor
 
-##Syllabus for project:
+## Syllabus for project:
 * create components project
 * create navbar for header
 * create models
@@ -20,7 +20,7 @@
 * add databinding
 * add inject services
 
-##Deep databinging:
+## Deep databinging:
 * binding custom property
 * binding custom events
 * encapsulation
@@ -41,11 +41,11 @@
 * ngSwitch
 * dropdown directive
 
-##Services and Dependency Injection
+## Services and Dependency Injection
 * inject service into component
 * create data service
 * injecting service into service
 * services for cross-component comunication
 
-##Routing
+## Routing
 
